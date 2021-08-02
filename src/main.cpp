@@ -37,7 +37,8 @@ int main() {
   /**
    * DONE: Initialize the pid variable.
    */
-  steer_pid.Init(0.15, 0.0, 1.8);
+  
+  steer_pid.Init(0.15, 0.0, 2.0);
 
   h.onMessage([&steer_pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, 
                      uWS::OpCode opCode) {
